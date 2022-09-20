@@ -1,0 +1,82 @@
+.card {
+  padding: 20px;
+  border: 1px solid #c9c9c9;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.card > img:first-child {
+  border-radius: 7px 7px 0 0;
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card h3,
+.card h4 {
+  color: #f76c6c;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+}
+
+.card h3 em {
+  padding: 0.25em;
+  background-color: #eddbff;
+  border-radius: 4px;
+}
+
+.card p,
+.card ul {
+  color: #757575;
+  line-height: 1.5;
+}
+
+.card .skills {
+  margin-bottom: 1rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.update,
+.delete {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: white;
+  fill: #f76b6b;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid #f76b6b;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.update:hover,
+.delete:hover {
+  background-color: #f76b6b;
+  fill: white;
+}
+
+.card button .icone {
+  width: 15px;
+}
+
+.card .buttons {
+  position: absolute;
+  top: 200px;
+  right: 20px;
+  z-index: 0;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
